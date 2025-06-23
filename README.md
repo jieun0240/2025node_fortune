@@ -1,15 +1,12 @@
-# 🥠Fortune🥠
-웹 앱 서비스 입니다.
- 하루에 한 번 포춘쿠키를 뽑고, 그 운세에 따라 감정 필터를 적용하여 사진과 함께 일상을 기록할 수 있습니다!
+# React + Vite
 
-## 기술스택
-- BE: Node.js
-- FE: React
-- DB: MySQL
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 주요기능
-- JWP 로그인 / 회원가입
-- 하루 1회 랜덤 포춘쿠기 뽑기
-- 운세 결과에 따라 감정 필터 뷴류
-- 사진 업로드 및 메모 저장
-- 날짜별 기록 확인(마이페이지)
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
