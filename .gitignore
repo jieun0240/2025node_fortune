@@ -7,10 +7,16 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependency directories
 node_modules
 dist
+build
 dist-ssr
-*.local
+.cache
+
+# dotenv
+.env
+.env.*
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +28,21 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Sequelize
+sequelize-data/
+
+# OS-specific files
+Thumbs.db
+ehthumbs.db
+
+# PM2 logs/pids
+pids
+*.pid
+
+# Certificates or key files
+*.pem

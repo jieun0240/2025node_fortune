@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+@font-face {
+    font-family: 'Ownglyph_meetme-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3370C7;
+    height: 100vh;
+    gap: 20px;
+}
+
+.logoContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logoImg {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 190px;
+}
+
+.title {
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    -webkit-text-stroke: 0.5px black;
+    text-align: center;
+}
+
+.loginContainer {
+    width: 290px;
+    padding: 30px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid black;
+    gap: 20px;
+    font-family: 'Ownglyph_meetme-Rg';
+    box-shadow: 4px 4px 0px black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    height: 32px;
+    border: none;
+    border-bottom: 1.5px solid black;
+    font-family: 'Ownglyph_meetme-Rg';
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.button {
+    width: 100%;
+    height: 35px;
+    background-color: #3370C7;
+    border-radius: 5px;
+    border: 1.5px solid black;
+    color: white;
+    font-family: 'Ownglyph_meetme-Rg';
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: #2859a4;
+}
+

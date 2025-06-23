@@ -1,0 +1,52 @@
+/* reset.css */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* 상단 정렬 */
+    background: #cecece;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    width: 393px;
+    min-height: 100vh;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 나머지 그대로 */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 1rem;
+}
