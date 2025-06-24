@@ -1,9 +1,10 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-
 import authRoutes from './routes/auth.js';
 import { sequelize } from './models/index.js';
+import userRoutes from './routes/user.js';
+import fortuneRoutes from './routes/fortune.js';
 
 dotenv.config();
 
@@ -14,10 +15,12 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/auth', authRoutes);
+app.use('/user', userRoutes);
+app.use('/fortune', fortuneRoutes);
 
 app.get('/', (req, res) => res.send('🎉 서버 정상 작동 중!'));
 
-// ✅ 여기부터 추가
+
 sequelize.authenticate()
     .then(() => {
         console.log('🟢 DB 연결 성공!');
