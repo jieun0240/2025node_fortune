@@ -5,6 +5,7 @@ import authRoutes from './routes/auth.js';
 import { sequelize } from './models/index.js';
 import userRoutes from './routes/user.js';
 import fortuneRoutes from './routes/fortune.js';
+import imagesRoutes from './routes/images.js';
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use('/auth', authRoutes);
 app.use('/user', userRoutes);
 app.use('/fortune', fortuneRoutes);
+app.use('/images', imagesRoutes);
 
 app.get('/', (req, res) => res.send('🎉 서버 정상 작동 중!'));
 
